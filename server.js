@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient
+const mongodb = require('mongodb')
 const PORT = 8000
 require('dotenv').config()
 
@@ -38,7 +39,7 @@ app.post('/submit-note', (req, res) => {
 })
 
 app.delete('/delete-note', (req, res) => {
-    db.collection('notes').deleteOne({'noteName': req.body.itemFromJs})
+    db.collection('notes').deleteOne({_id: new mongodb.ObjectID(req.body.itemFromJs)})
     .then(result => {
         console.log(result)
         res.json('Note Deleted')
