@@ -16,6 +16,6 @@ Making connections with a database to pull notes and delete them from mongoDB
 
 ## Optimizations  
 
-User Accounts
-Customization
-Edit Notes
+User Accounts  
+Customization  
+Edit Notes  
