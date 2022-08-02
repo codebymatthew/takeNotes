@@ -21,8 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisThompsonDev/takeNotes.git",
-    "url": "git+https://github.com/codebymatthew/takeNotes.git"
+    "url": "git+https://github.com/ChrisThompsonDev/takeNotes.git"
   },
   "bugs": {
     "url": "https://github.com/ChrisThompsonDev/takeNotes/issues"
