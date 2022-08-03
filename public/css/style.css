@@ -22,10 +22,10 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     /* flex: 1 0 21%; */
-    border: .1rem black solid;
     position: relative;
     padding: 1rem;
     border-radius: 1rem;
+    border: .1rem black solid;
 }
 
 .infoOfNote{
@@ -45,49 +45,65 @@ body {
     font-size: 3rem;
 }
 
-#createNewNote {
+/* #createNewNote {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-#createNewNote form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-}
+} */
 #newNote {
     text-align: center;
     font-size: 2rem;
     margin-top: 0;
 }
-.creationSection {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-.creationSection * {
-    width: 25%
-}
 
-#noteName {
+/* #noteName {
     width: 20rem;
 }
 #noteInfo {
-    width: 20rem;
-}
+    width: 20.1rem;
+} */
 #noteSection{
     width: 70%;
     margin: 2rem auto;
 }
 footer {
-    position: fixed;
-    bottom: 0%;
+    /* position: fixed;
+    bottom: 0%; */
     font-size: 2rem;
     margin: 0 auto;
     text-align: center;
     width: 80%;
-    height: 3rem;
+    height: 5rem;
 }
+#creationForm {
+    background: #d5b8ffCC;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 1rem;
+    border: .1rem black solid;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+}
+#submitNote {
+    margin-top: auto;;
+}
+
+/* #creationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+} */
+/* .creationSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+} */
+/* .creationSection * {
+    width: 25%
+} */

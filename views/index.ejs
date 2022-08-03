@@ -16,30 +16,30 @@
         <section class="creationSection">
 
             <h1 id="header">Notes</h1>
-            <h2 id="newNote">Create a New Note</h2>
-            <section id="createNewNote">
-                <form action="/submit-note" method="POST">
-                    <select name="noteColor" id="noteColor" placeholder="Yellow">
-                        <option value="Yellow">Yellow</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Green">Green</option>
-                        <option value="Orange">Orange</option>
-                        <option value="Purple">Purple</option>
-                        <option value="Pink">Pink</option>
-    
-                    </select>
-                    <input type="text" name="noteName" id="noteName" placeholder="Enter Note Name">
-                    <textarea cols="40" rows="5" id="noteInfo" name="noteInfo"></textarea>
-                    <input type="submit" value="Submit" id="submitNote">
-                    
-    
-                </form>
-    
-            </section>
             
         </section>
         <section id="noteSection">
             <section class="noteArea">
+                <section id="createNewNote">
+                    <form action="/submit-note" method="POST" id="creationForm">
+                        <h2 id="newNote">Create a New Note</h2>
+                        <select name="noteColor" id="noteColor" placeholder="Yellow">
+                            <option value="Yellow">Yellow</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Green">Green</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Purple">Purple</option>
+                            <option value="Pink">Pink</option>
+        
+                        </select>
+                        <input type="text" name="noteName" id="noteName" placeholder="Enter Note Name">
+                        <textarea cols="40" rows="9" id="noteInfo" name="noteInfo"></textarea>
+                        <input type="submit" value="Submit" id="submitNote">
+                        
+        
+                    </form>
+        
+                </section>
                 <% for (let i = 0; i < notes.length; i++) {%>
                     
                     <div class="note">
