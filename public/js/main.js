@@ -1,9 +1,13 @@
 const deleteBtn = document.querySelectorAll('.clickMe')
+const editBtn = document.querySelectorAll('.edit')
 
 
 
 Array.from(deleteBtn).forEach(e => {
     e.addEventListener('click', deleteNote)
+})
+Array.from(editBtn).forEach(e => {
+    e.addEventListener('click', editNote)
 })
 
 async function deleteNote() {
@@ -17,6 +21,31 @@ async function deleteNote() {
             })
         })
         location.reload()
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+async function editNote() {
+    //grab text from note
+    const noteToEdit = this.parentNode.childNodes[1].textContent
+    const noteNameToEdit =  this.parentNode.childNodes[3].textContent
+    const noteColorToEdit =  this.parentNode.childNodes[5].textContent
+    const noteInfoToEdit =  this.parentNode.childNodes[7].textContent
+    console.log(noteToEdit, noteNameToEdit, noteColorToEdit, noteInfoToEdit)
+    //create modal that uses the variables stored above
+    
+    //then submit will send updated text and reload
+    try{
+        const response = await fetch('edit-note', {
+            method: 'update',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+            itemFromJs : noteToEdit
+            })
+        })
+        /* location.reload() */
     }
     catch(err){
         console.log(err)

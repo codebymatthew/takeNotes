@@ -9,13 +9,14 @@ body {
 }
 .noteArea {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .note {
-    width: 30rem;
-    height: 30rem;
+    width: 20rem;
+    height: 25rem;
     margin: 1rem;
     font-size: 1.6rem;
     display: flex;
@@ -44,10 +45,7 @@ body {
     text-align: center;
     font-size: 3rem;
 }
-footer {
-    text-align: center;
-    font-size: 2rem;
-}
+
 #createNewNote {
     width: 100%;
     display: flex;
@@ -55,10 +53,48 @@ footer {
     flex-wrap: wrap;
 }
 #createNewNote form {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
 }
 #newNote {
     text-align: center;
     font-size: 2rem;
+    margin-top: 0;
+}
+.creationSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.creationSection * {
+    width: 25%
+}
+
+#noteName {
+    width: 20rem;
+}
+#noteInfo {
+    width: 20rem;
+}
+#noteSection{
+    width: 70%;
+    margin: 2rem auto;
+}
+footer {
+    /* position: fixed;
+    bottom: 0%; */
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 5rem;
+    background-color: rgb(222, 221, 221);
+}
+.edit {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }
