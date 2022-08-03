@@ -9,6 +9,7 @@ body {
 }
 .noteArea {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -68,8 +69,6 @@ body {
     margin: 2rem auto;
 }
 footer {
-    /* position: fixed;
-    bottom: 0%; */
     font-size: 2rem;
     margin: 0 auto;
     text-align: center;
@@ -91,7 +90,11 @@ footer {
 #submitNote {
     margin-top: auto;;
 }
-
+.edit {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
 /* #creationForm {
     display: flex;
     flex-direction: column;
